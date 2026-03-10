@@ -491,6 +491,25 @@
                                         </iframe>
                                     </div>
                                 </FadeInSection>
+
+                                <FadeInSection className="mt-20 pt-16 border-t border-forest/10">
+                                    <h3 className="text-forest text-2xl font-bold mb-10 text-center">Why Choose Dr. Sharif?</h3>
+                                    <div className="grid md:grid-cols-3 gap-8">
+                                        {[
+                                            { title: "Board Certified", desc: "Diplomate of the American Board of Allergy and Immunology.", icon: "shield-check" },
+                                            { title: "Telehealth Available", desc: "Expert virtual care from the comfort of your home.", icon: "video" },
+                                            { title: "Author & Educator", desc: "Educational authority through the Dr. Allergeez book series.", icon: "pencil" }
+                                        ].map((item, idx) => (
+                                            <div key={idx} className="bg-white p-8 rounded-3xl shadow-sm border border-forest/5 flex flex-col items-center text-center group hover:shadow-md transition-all">
+                                                <div className="w-14 h-14 bg-mint rounded-2xl flex items-center justify-center text-forest mb-6 group-hover:bg-forest group-hover:text-white transition-colors">
+                                                    <i data-lucide={item.icon}></i>
+                                                </div>
+                                                <h4 className="text-forest text-xl font-bold mb-2">{item.title}</h4>
+                                                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </FadeInSection>
                             </div>
                         </div>
                     </section>
