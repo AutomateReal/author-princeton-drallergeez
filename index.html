@@ -467,21 +467,21 @@
                                         </a>
                                     </div>
 
-                                    <div className="pt-8 border-t border-forest/5">
-                                        <h3 className="text-forest text-xl font-bold mb-8">Why Choose Dr. Sharif?</h3>
-                                        <div className="grid gap-6">
+                                    <div className="pt-10 border-t border-forest/5">
+                                        <h3 className="text-forest text-3xl font-bold mb-10">Why Choose Dr. Sharif?</h3>
+                                        <div className="grid gap-8">
                                             {[
                                                 { title: "Board Certified", desc: "Diplomate of the American Board of Allergy and Immunology.", icon: "shield-check" },
                                                 { title: "Telehealth Available", desc: "Expert virtual care from the comfort of your home.", icon: "video" },
                                                 { title: "Author & Educator", desc: "Educational authority through the Dr. Allergeez book series.", icon: "pencil" }
                                             ].map((item, idx) => (
-                                                <div key={idx} className="flex items-start space-x-4 group">
-                                                    <div className="w-10 h-10 bg-mint rounded-xl flex items-center justify-center text-forest flex-shrink-0 group-hover:bg-forest group-hover:text-white transition-colors">
-                                                        <i data-lucide={item.icon} className="w-5 h-5"></i>
+                                                <div key={idx} className="flex items-start space-x-5 group">
+                                                    <div className="w-12 h-12 bg-mint rounded-2xl flex items-center justify-center text-forest flex-shrink-0 group-hover:bg-forest group-hover:text-white transition-colors">
+                                                        <i data-lucide={item.icon} className="w-6 h-6"></i>
                                                     </div>
                                                     <div>
-                                                        <h4 className="text-forest font-bold mb-1">{item.title}</h4>
-                                                        <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                                                        <h4 className="text-forest text-xl font-bold mb-2">{item.title}</h4>
+                                                        <p className="text-gray-600 text-lg leading-relaxed">{item.desc}</p>
                                                     </div>
                                                 </div>
                                             ))}
